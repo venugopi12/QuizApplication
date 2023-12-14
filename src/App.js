@@ -1,25 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Quiz from './components/Quiz';
 
-function App() {
+const App = () => {
+  const quizData = [
+    {
+      question: 'What is the capital of France?',
+      options: ['Paris', 'Berlin', 'Madrid', 'Rome'],
+      correctAnswer: 'Paris',
+    },
+    {
+      question: 'Which planet is known as the Red Planet?',
+      options: ['Earth', 'Mars', 'Venus', 'Jupiter'],
+      correctAnswer: 'Mars',
+    },
+    {
+      question: 'What is the capital of France?',
+      options: ['Paris', 'Berlin', 'Madrid', 'Rome'],
+      correctAnswer: 'Paris',
+    },
+    {
+      question: 'Which planet is known as the Red Planet?',
+      options: ['Earth', 'Mars', 'Venus', 'Jupiter'],
+      correctAnswer: 'Jupiter',
+    },
+    {
+      question: 'What is the capital of France?',
+      options: ['Paris', 'Berlin', 'Madrid', 'Rome'],
+      correctAnswer: 'Berlin',
+    },
+    {
+      question: 'Which planet is known as the Red Planet?',
+      options: ['Earth', 'Mars', 'Venus', 'Jupiter'],
+      correctAnswer: 'Venus',
+    },
+    // Add more questions as needed
+  ];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Quiz App</h1>
+      <Quiz quizData={quizData} />
     </div>
   );
-}
+};
 
 export default App;
