@@ -1,4 +1,3 @@
-// Quiz.js
 import React, { useState } from 'react';
 import Question from './Question';
 
@@ -8,7 +7,6 @@ const Quiz = ({ quizData }) => {
   const [showSummary, setShowSummary] = useState(false);
 
   const handleAnswer = (selectedOptions) => {
-    // Update the answers state
     setAnswers((prevAnswers) => {
       const updatedAnswers = [...prevAnswers];
       if (quizData[currentQuestion]) {
@@ -44,7 +42,7 @@ const Quiz = ({ quizData }) => {
         <ul>
           {answers.map((answer, index) => (
             <li key={index}>
-              {answer && ( // Add a check for the existence of answer
+              {answer && ( 
                 <>
                   <strong>Question:</strong> {answer.question}<br />
                   <strong>Your Answer:</strong> {answer.selectedOptions.join(', ')}<br />

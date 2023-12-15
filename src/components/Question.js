@@ -1,4 +1,3 @@
-// Question.js
 import React from 'react';
 
 const Question = ({ question, options, selectedOptions, onChange, onNextClick, onPrevClick, buttonLabel, questionType }) => {
