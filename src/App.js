@@ -7,31 +7,37 @@ const App = () => {
       question: 'What is the capital of France?',
       options: ['Paris', 'Berlin', 'Madrid', 'Rome'],
       correctAnswer: 'Paris',
+      questionType:"radio",
     },
     {
       question: 'Which planet is known as the Red Planet?',
       options: ['Earth', 'Mars', 'Venus', 'Jupiter'],
       correctAnswer: 'Mars',
+      questionType:'radio'
     },
     {
       question: 'What is the capital of France?',
       options: ['Paris', 'Berlin', 'Madrid', 'Rome'],
       correctAnswer: 'Paris',
+      questionType:'radio'
     },
     {
       question: 'Which planet is known as the Red Planet?',
-      options: ['Earth', 'Mars', 'Venus', 'Jupiter'],
-      correctAnswer: 'Jupiter',
+      options: [],
+      correctAnswer: ["Hello"],
+      questionType:'text'
     },
     {
       question: 'What is the capital of France?',
-      options: ['Paris', 'Berlin', 'Madrid', 'Rome'],
-      correctAnswer: 'Berlin',
+      options: [],
+      correctAnswer: ["Hai"],
+      questionType:'text'
     },
     {
       question: 'Which planet is known as the Red Planet?',
-      options: ['Earth', 'Mars', 'Venus', 'Jupiter'],
-      correctAnswer: 'Venus',
+      options: [],
+      correctAnswer: ["Hey"],
+      questionType:'text'
     },
     // Add more questions as needed
   ];
